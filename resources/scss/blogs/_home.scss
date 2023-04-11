@@ -1,0 +1,324 @@
+.Home-bg{
+    width: 100%;
+    height: 500px;
+    background: var(--clr-primary-2);
+    margin-bottom: 10px;
+    .home-text{
+        font: {
+            size: 61px;
+            weight: bold;
+            style: normal;
+            family: $font-family-1;
+        }
+        color: var(--clr-primary-3);
+        text-align: center;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 412px) {
+    .Home-bg{
+        height: 307px;
+        .home-text{
+            font: {
+                size: 30px;
+            }
+            padding-top: 40%;
+        }
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 700px) {
+    .Home-bg{
+        height: 307px;
+        .home-text{
+            font: {
+                size: 30px;
+            }
+            padding-top: 21%;
+        }
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 920px) {
+    .Home-bg{
+        height: 307px;
+        .home-text{
+            font: {
+                size: 30px;
+            }
+            padding-top: 21%;
+        }
+    }
+}
+
+.search{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    #search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .search-input{
+            width: 17%;
+            height: 40px;
+            border-radius: 5px;
+            background: var(--clr-primary-2);
+            border: none;
+            color: var(--clr-primary-3);
+            font: {
+                size: 15px;
+                family: $font-family-2;
+            }
+            padding-left: 5px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 15px;
+                color: var(--clr-primary-3);
+            }
+        }
+        .search-btn{
+            width: 50px;
+            height: 40px;
+            background: var(--clr-primary-2);
+            margin-left: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            i{
+                color: var(--clr-primary-3);
+            }
+            &:active{
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 954px) {
+    .search{
+        #search{
+            .search-input{
+                width: 80%;
+            }
+        }
+    }
+}
+
+.blog-note{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .note-blog{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .note{
+            width: 21%;
+            height: auto;
+            padding: 11px;
+            border: 1px solid var(--clr-primary-2);
+            border-radius: 5px;
+            margin-top: 20px;
+            .img-note{
+                width: 95%;
+                height: 177px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                border-radius: 5px;
+                border: 1px solid var(--clr-primary-2);
+                #img-note{
+                    width: 100%;
+                    height: 100%;
+                    background-origin: border-box;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+            .category-note{
+                width: auto;
+                height: auto;
+                padding: 0px 5px;
+                background: var(--clr-primary-4);
+                margin-left: 11px;
+                margin-top: 11px;
+                border-radius: 5px;
+                text-align: center;
+                #category-note{
+                    font: {
+                        size: 14px;
+                        weight: normal;
+                        style: normal;
+                        family: $font-family-2;
+                    }
+                    color: var(--clr-primary-3);
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+            .title-note{
+                margin-left: 17px;
+                width: 98%;
+                height: 110px;
+                padding-top: 10px;
+                #title-note{
+                    font: {
+                        size: 16px;
+                        family: $font-family-2;
+                        weight: bold;
+                        style: normal;
+                    }
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: var(--clr-primary-1);
+                }
+            }
+            .create-at{
+                margin-left: 11px;
+                .date-note{
+                    font: {
+                        size: 13px;
+                        family: $font-family-2;
+                        style: normal;
+                    }
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: var(--clr-primary-1);
+                    margin-bottom: 20px;
+                }
+            }
+            .description-note{
+                padding-bottom: 20px;
+                height: auto;
+                #description-note{
+                    font: {
+                        size: 14px;
+                        family: $font-family-2;
+                        style: normal;
+                    }
+                    text-transform: capitalize;
+                    color: var(--clr-primary-1);
+                }
+            }
+            .owner-post{
+                margin-left: 11px;
+                margin-right: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #owner-post{
+                    display: flex;
+                    align-items: center;
+                    .owner-profile{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        background-origin: border-box;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .owner-name{
+                        font: {
+                            size: 14px;
+                            family: $font-family-2;
+                            style: normal;
+                        }
+                        color: var(--clr-primary-1);
+                    }
+                }
+                .liked{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    #like{
+                        width: 27px;
+                        height: 42px;
+                        cursor: pointer;
+                        &:active{
+                            transform: scale(0.98);
+                        }
+                    }
+                    ion-icon[name = "heart"]{
+                        color: var(--clr-primary-5);
+                        display: none;
+                    }
+                    .numbers-liked{
+                        font: {
+                            size: 18px;
+                            family: $font-family-2;
+                            style: normal;
+                        }
+                        color: var(--clr-primary-1);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .blog-note{
+        .note-blog{
+            flex-direction: column;
+            .note{
+                width: 96%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                .title-note{
+                    .detail-blog{
+                        font: {
+                            size: 16px;
+                        }
+                    }
+                }
+                .create-at{
+                    .date-note{
+                        font: {
+                            size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+    .blog-note{
+        .note-blog{
+            .note{
+                width: 49%;
+                .category-note{
+                    width: 62px;
+                    height: auto;
+                    padding: 0px 5px;
+                    background: var(--clr-primary-4);
+                    margin-left: 11px;
+                    margin-top: 11px;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+                .title-note{
+                    .detail-blog{
+                        font: {
+                            size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

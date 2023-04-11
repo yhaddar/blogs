@@ -1,0 +1,193 @@
+.detail-blogs{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    #detail-blogs{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .detail-title{
+            #detail-title{
+                font: {
+                    size: 34px;
+                    family: $font-family-2;
+                    weight: bold;
+                    style: normal;
+                }
+                color: var(--clr-primary-1);
+                text-align: center;
+            }
+        }
+        .img-detail{
+            width: 50%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            #img-detail{
+                width: 100%;
+                height: 100%;
+                background-origin: border-box;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .time-detail{
+            text-align: center;
+            margin-top: 5px;
+            #time-detail{
+                font: {
+                    size: 16px;
+                    weight: normal;
+                    style: normal;
+                    family: $font-family-2;
+                }
+                color: var(--clr-primary-1);
+            }
+        }
+        .description-detail{
+            width: 50%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            #description-detail{
+                font: {
+                    size: 18px;
+                    weight: normal;
+                    style: normal;
+                    family: $font-family-2;
+                }
+                color: var(--clr-primary-1);
+            }
+        }
+        div[name="profile"]{
+            display: grid;
+            justify-items: center;
+            margin-top: 20px;
+            .profile-detail{
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                .created-by{
+                    font: {
+                        size: 15px;
+                        weight: bold;
+                        style: normal;
+                        family: $font-family-2;
+                    }
+                    color: var(--clr-primary-1);
+                    margin-right: 10px;
+                }
+                #profile-detail{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    background-origin: border-box;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .name-detail{
+                    font: {
+                        size: 15px;
+                        weight: normal;
+                        style: normal;
+                        family: $font-family-2;
+                    }
+                    color: var(--clr-primary-1);
+                }
+            }
+            .back-to-home{
+                font: {
+                    size: 15px;
+                    weight: normal;
+                    style: normal;
+                    family: $font-family-2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .detail-blogs{
+        #detail-blogs{
+            width: 98%;
+            .detail-title{
+                #detail-title{
+                    font: {
+                        size: 16px;
+                    }
+                }
+            }
+            .img-detail{
+                width: 95%;
+                height: 224px;
+            }
+            .time-detail{
+                #time-detail{
+                    font: {
+                        size: 13px;
+                    }
+                }
+            }
+            .description-detail{
+                width: 93%;
+                #description-detail{
+                    font: {
+                        size: 9px;
+                    }
+                }
+            }
+            div[name="profile"]{
+                .profile-detail{
+                    .created-by{
+                        font: {
+                            size: 10px;
+                        }
+                    }
+                    #profile-detail{
+                        width: 43px;
+                        height: 43px;
+                        border-radius: 50%;
+                    }
+                    .name-detail{
+                        font: {
+                            size: 11px;
+                        }
+                    }
+                }
+                .back-to-home{
+                    font: {
+                        size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+    .detail-blogs{
+        #detail-blogs{
+            width: 95%;
+            .detail-title{
+                #detail-title{
+                    font: {
+                        size: 27px;
+                    }
+                }
+            }
+            .img-detail{
+                width: 98%;
+                height: 444px;
+            }
+            .description-detail{
+                width: 98%;
+            }
+        }
+    }
+}

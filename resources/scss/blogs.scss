@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Cairo:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$font-family-1: 'Anuphan', sans-serif;
+$font-family-2: 'Cairo', sans-serif;
+
+:root{
+    --clr-primary-1: hsl(0, 0%, 0%);
+    --clr-primary-2: hsl(255, 27%, 26%);
+    --clr-primary-3: hsl(0, 0%, 100%);
+    --clr-primary-4: hsl(254, 20%, 44%);
+    --clr-primary-5: hsl(355, 100%, 59%);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--clr-primary-3);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--clr-primary-4);
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-primary-2);
+  }
+
+@import './blogs/navbar';
+@import './blogs/home';
+@import './blogs/detail-blog';
+@import './blogs/add-blogs';
+@import './blogs/user';
+@import './blogs/my-blogs';
