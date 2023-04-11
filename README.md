@@ -10,7 +10,7 @@ Blogs site for writing articles in various fields
 
 ## Tech Stack
 
-**Client:** scss, Bootstrap, Javascript
+**Client:** scss, Bootstrap, Jquery
 
 **Server:** laravel, mysql
 
